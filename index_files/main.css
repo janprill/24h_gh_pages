@@ -1,0 +1,893 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: #262626;
+}
+
+iframe {
+	background-color: transparent;
+	border: none;
+}
+
+address {
+	font-family: 'avenir';
+	letter-spacing: 0.5px;
+	font-style: normal;
+	font-size: 10pt;
+	color: #333;
+}
+
+address br {
+	line-height: 25px;
+}
+
+fieldset {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	margin:0;
+}
+
+ul.cyanBullets {
+	list-style: none;
+	margin:0;
+	padding:0;
+	position: relative;
+	left: -6px;
+}
+
+ul.cyanBullets li {
+    text-indent: -.7em;
+}
+
+ul.cyanBullets li:before {
+	content: "• ";
+	color: #64C7D5;
+}
+
+#content_outer {
+	padding-bottom:85px;
+}
+
+#page {
+	min-height:100%;
+	position:relative;
+}
+
+#footer {
+	position: absolute;
+	background-color: #262626;
+	width: 1024px;
+	left: 50%;
+	margin-left: -512px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	bottom:0;
+	height:30px;
+}
+
+#footer_bg {
+	padding-top: 14px;
+	padding-bottom: 14px;
+	position: absolute;
+	background-color: #262626;
+	width: 100%;
+	height: 30px;
+	bottom:0;
+}
+
+#footer img#footerLogo{
+	margin-left: 30px;
+}
+
+#footer div#footerNavLinks{
+	float: right;
+}
+
+#footer div#footerNavLinks a{
+	padding: 0px 25px;
+	font-size: 9pt;
+}
+
+#header_overlay {
+	top: 0;
+	position: fixed;
+	height: 134px;
+	background-color: #ffffff;
+	width: 100%;
+	z-index: 199;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	width: 1024px;
+	margin-left: -512px;
+	background-color: #ffffff;
+	z-index: 200;
+}
+
+#header img#logo {
+	margin-top: 21px;
+	margin-left: 30px;
+	float: left;
+}
+
+.content {
+	background-color: #ffffff;
+	padding: 45px 50px 45px 50px;
+	margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+/*
+black (alpha=0.5) content teaser
+*/
+.opaqueTeaser {
+	background-color: rgba(38, 38, 38, 0.85);
+	width:922px;
+	padding:20px 50px;
+}
+
+.break {
+	overflow:hidden;
+}
+
+.errors {
+	color:red;
+}
+
+.errorblock {
+	color: #000;
+	background-color: #ffEEEE;
+	border: 3px solid #ff0000;
+	padding: 8px;
+	margin: 16px;
+	font-family: 'avenir';
+}
+
+.no_script {
+	color: #000;
+	background-color: #ffEEEE;
+	border: 3px solid #ff0000;
+	padding: 8px;
+	font-family: 'avenir';
+	display:block;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:201;
+	text-align: center;
+}
+
+.moreContentLink {
+	color: #64C7D5;
+    font-family: 'avenir';
+    font-size: 10pt;
+}
+
+a.blueButton {
+	font-family: 'avenir';
+	background-color: #59ADB8;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 11pt;
+}
+
+input[type=text], input[type=password], textarea {
+	border: 2px solid #FF8916;
+    font-size: 10pt;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 0;
+    padding-left: 7px;
+    border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.dashedContentSeperator {
+	border-style: dashed;
+	border-color: #66c8d6;
+	border-width: 1px 1px 0px;
+	overflow: hidden;
+}
+
+#header_overlay_border {
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	margin-top:89px;
+	height:44px;
+}
+
+#background_gray {
+	background-color: #CCCCCC;
+}
+
+/*###################
+##  LOGIN  ##
+#####################*/
+#loginForm {
+    font-family: 'avenir';
+	border-collapse: collapse;
+	font-size: 14px;
+	color: #333;
+	margin-top: 8px;
+}
+
+#loginForm td {
+	padding-bottom: 8px;
+}
+
+#loginForm #loginButton {
+	float: right;
+	margin-right: 7px;
+	font-family: 'avenir';
+}
+
+
+/*###################
+##  CARTITEMS  ##
+#####################*/
+
+.price_top {
+	padding-top:7px;
+}
+
+.price_left {
+	color: #333;
+	font-weight:normal;
+	padding-right: 26px;
+}
+
+.price_left {
+	color: #333;
+	font-weight:normal;
+	padding-right: 26px;
+}
+
+.price_sum_left {
+	padding-right: 26px;
+	padding-top: 15px;
+}
+
+.price_sum_right {
+	padding-top: 15px;
+}
+
+.price_sum {
+	color: #262626;
+	font-weight:bold;
+	font-size:12pt;
+}
+
+
+#prices {
+	padding-right:16px;
+	height:131px;
+	font-weight:bold;
+	font-family: 'avenir';
+	font-size:10pt;
+	width:890px;
+}
+
+#prices_table {
+	margin-top:21px;
+	text-align: right;
+	float:right;
+}
+
+#cartitems {
+	font-family: 'avenir';
+}
+
+#headline {
+	overflow: hidden;
+	font-size: 26pt;
+	padding-bottom:20px;
+	font-family: 'avenir';
+}
+
+.cartitem {
+	width: 907px;
+	height: 100px;
+	border-color: #999999;
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	background-color: #FFFFFF;
+	font-family: 'avenir';
+	position: relative;
+}
+
+.cartitem_img {
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	height:90px;
+}
+
+.cartitem_info {
+	width: 301px;
+	position: absolute;
+	height: 98px;
+	left: 152px; /*122, aber bilder zu gro� :(*/
+	border-color: #FF8818;
+	border-style: dashed;
+	border-width: 0px 1px 0px 0px;
+}
+
+.cartitem_quantity {
+	width: 95px;
+	height: 98px;
+	border-color: #FF8818;
+	border-style: dashed;
+	border-width: 0px 1px 0px 0px;
+	position: absolute;
+	left: 455px;
+}
+
+.cartitem_price {
+	font-size: 10pt;
+	width: 180px;
+	height: 98px;
+	border-color: #FF8818;
+	border-style: dashed;
+	border-width: 0px 1px 0px 0px;
+	position: absolute;
+	left: 552px;
+}
+
+.cartitem_sum {
+	font-size: 10pt;
+	height: 98px;
+	left: 735px;
+	position: absolute;
+	width:175px;
+}
+
+.cartitem_text_left {
+	position:absolute;
+	top:46px;
+	left:16px;
+	color: #333;
+}
+
+.cartitem_text_right {
+	position:absolute;
+	top:46px;
+	right:13px;
+	font-weight:bold;
+}
+
+
+.cartitem_info_name {
+	font-size: 18pt;
+	font-family: 'avenir';
+	margin-top:10px;
+	margin-left:10px;
+}
+
+.cartitem_info_description {
+	font-size: 10px;
+	margin-left:10px;
+}
+
+.formText {
+	font-family: 'avenir';
+	letter-spacing: 0.5px;
+	font-size: 10pt;
+	color: #333;
+}
+
+.standardForm {
+	font-family: 'avenir';
+}
+
+.standardForm input[type="text"], input[type="password"], textarea {
+	width: inherit;
+}
+
+/*field error message <form:errors .../> */
+.standardForm .err{
+	color: red;
+	font-size: 9pt;
+}
+
+.standardForm .inputInlineError {
+	float: left;
+	padding-right: 20px;
+}
+
+.standardForm .errInline {
+	color: red;
+	font-size: 9pt;
+	position: relative;
+	display: block;
+}
+
+.standardForm td {
+	height: 38px;
+}
+
+/*uniform.js fix when using with <form:radiobutton /> */
+.standardForm .radio + label {
+	float: left;
+	margin-right: 25px;
+	padding-top: 2px;
+}
+
+.standardForm > img {
+	float: left;
+}
+
+
+/**first column (LABELS)*/
+.standardForm td:nth-child(1) {
+	font-size: 10pt;
+	width: 170px;
+}
+
+/**last column (ERROR-LABELS)*/
+.standardForm td:nth-child(3) {
+	font-size: 9pt;
+	color: red;
+}
+
+/*all input-fields with a validation error*/
+.standardForm td input.err,
+.standardForm td textarea.err{
+	border-color: red;
+	background-color: rgba(255,0,0,0.01);
+	background-image: url(../images/stripes_transparent.png);
+}
+
+/*########################
+##  BUTTONS             ##
+##########################*/
+.orangeButtonArrow {
+	margin-left: 10px;
+	border: none;
+}
+
+a.defaultButton {
+	font-family: 'avenir';
+	font-size: 14px;
+	background-color: #ff8916;
+	line-height: 40px !important;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff !important;
+	display: inline;
+	text-align: center;
+	text-decoration: none !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	font-size: 11pt;
+}
+
+a.defaultButton > img {
+	position: relative;
+	top: 2px;
+	margin-left: 10px;
+}
+
+.cart_checkout_button {
+	/*same as css-class 'orangeButton'*/
+	background-color: #ff8916;
+	height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: 'avenir';
+}
+
+.lubalinStdFont {
+	font-family: 'avenir';
+}
+
+.avenirStdFont {
+	font-family: 'avenir';
+}
+
+.h0 {
+	font-family: "avenir";
+	font-size: 64px;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: -1.5pt;
+	color:#262626;
+}
+
+
+/**
+ * Closest to PhotoShop setting:
+ * 36pt, Book, Sharp
+ */
+.section {
+	font-family: 'avenir';
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+.dietHintPost .section a {
+	color: #000;
+	text-decoration: none;
+}
+
+/*inline span (e.g. *Pflichtfelder)*/
+.section > span {
+	text-transform: none;
+}
+
+/**
+ * Closest to PhotoShop setting:
+ * 14pt, 55 Roman, Sharp
+ */
+.sectionHint {
+	font-family: 'avenir';
+	font-size: 10pt;
+	letter-spacing: 0.5px;
+	color: #333;
+}
+
+/**
+ * Closest to PhotoShop setting:
+ * 30pt, 55 Roman, Sharp
+ */
+.subsection {
+	font-family: 'avenir';
+	font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    margin: 15px 0;
+}
+
+.sub_subsection {
+	font-family: 'avenir';
+	font-size: 14pt;
+    letter-spacing: 0.2px;
+    margin: 0px 0;
+}
+
+.sectionText {
+	font-family: 'avenir';
+	letter-spacing: 0.5px;
+	font-size: 14px;
+	color: #333;
+}
+
+.sectionText14Black {
+	font-family: 'avenir';
+	letter-spacing: 0.5px;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #000000;
+}
+
+.sectionText18Orange {
+	font-family: 'avenir';
+	font-size: 18px;
+	color: #ff8916;
+}
+
+.modalLayer {
+    padding: 0 40px;
+}
+
+.modalLayer h1 {
+	font-family: 'avenir';
+	font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    margin: 15px 0;
+}
+
+.modalLayer h2 {
+	font-family: 'avenir';
+	font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    margin: 15px 0;
+}
+
+.modalLayer p {
+	font-family: 'avenir';
+	letter-spacing: 0.5px;
+	font-size: 14px;
+	color: #333;
+}
+
+/*############################################
+  ##  simpleArrowBox:
+  ##    _________________________________________
+  ##   |    Daten    \   Bezahlen  \    Fertig   |
+  ##   |_____________/_____________/_____________|
+  ##
+  ############################################*/
+.simpleArrowBox {
+	margin-right: -11px;
+    margin-top: -1px;
+    height: 47px;
+    color: rgb(127, 127, 124);
+}
+
+div.arrowBox {
+	line-height: 47px;
+	float: left;
+	text-align: center;
+
+	background: #f1f1f1;
+	/*border-top: 1px solid #999999;*/
+	border-bottom: 1px solid #999999;
+}
+
+div.arrowBox.step_current {
+	background: #ffffff;
+}
+
+.simpleArrowBox div:last-child {
+	/*border-right: 1px solid #999999;*/
+}
+
+.simpleArrowBox .arrow {
+    float:right;
+    position: relative;
+    top: 24px;
+}
+
+.arrow:after, .arrow:before {
+	position: absolute;
+	content: " ";
+	border: solid transparent;
+}
+
+.arrow:after {
+	border-width: 23px;
+	margin-top: -23px;
+	border-left-color: #f1f1f1; /*arrow's fill color*/
+}
+
+div.arrowBox.step_current .arrow:after {
+	border-left-color: #ffffff; /*arrow's fill color when active*/
+}
+
+.arrow:before {
+	border-width: 24px;
+	margin-top: -24px;
+	border-left-color: #cccccc; /*arrow's border color*/
+}
+/*END simpleArrowBox ##########################################################*/
+
+
+/*########################
+##  HELPER CSS CLASSES  ##
+##########################*/
+/*typically used to escape floating of previous elements:
+example: <div class="clear"></div>
+*/
+.clear {
+	clear: both;
+}
+
+.nobottomMargin {
+	margin-bottom: 0;
+}
+
+.twoColumns {
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	column-count: 2;
+	column-gap: 20px;
+}
+
+.grayBox {
+	display: block;
+	background-color: #c8c8c8;
+	line-height: 17px;
+	margin-top: 7px;
+	margin-left: 5px;
+	padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.uiDialogClass {
+	background-color: #ffffff;
+	box-shadow: 0 4px 9px 0 rgba(0,0,0,0.8);
+	border: 1px solid #999999;
+	/*overflow-y: auto; für später, wenn unsere popups scrollen müssen.*/
+}
+
+/*modal overlay for jquery dialogs.*/
+.ui-widget-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+    /*background-image: url("../images/stripes_transparent.png");*/
+    overflow: hidden;
+}
+
+.ui-dialog-titlebar {
+	position: absolute;
+    top: -50px;
+    width: 100%;
+}
+
+.ui-dialog-content {
+	overflow-y: auto;
+}
+
+.ui-dialog-title {
+	font-family: 'avenir';
+	font-size: 34px;
+	margin: 0 0 20px 0;
+	color: #ffffff;
+}
+
+.ui-dialog-titlebar-close {
+	position: absolute;
+	right: 0;
+    background-color: #63C7D6;
+    background-image: url("../images/cross.png");
+    background-position: 95px 5px;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: 'avenir';
+    font-size: 16px;
+    padding: 9px 45px 4px 16px;
+}
+
+.linkPopupHint {
+	display: inline-block;
+	background-image: url('../images/icons/popup.png');
+	background-position: 0 -1px;
+	width: 16px;
+	height: 13px;
+}
+
+ul.inlineTextList {
+	margin-top: -10px;
+	padding-left: 13px;
+}
+
+#footerNavLinks .linkPopupHint {
+	display: none;
+}
+
+.footerUiDialogClass {
+	background-color: #ffffff;
+	box-shadow: 0 4px 9px 0 rgba(0,0,0,0.8);
+	border: 1px solid #999999;
+	position: fixed;
+}
+
+.spacerHeight50Px { margin-top: 50px; }
+.spacerHeight30Px { padding-bottom: 30px; }
+.spacerHeight25Px { padding-bottom: 25px; }
+
+
+/*############################################
+  ##  newsletterbox
+  ############################################*/
+.newsletterCheckbox {
+	color: #ffffff;
+}
+
+/*############################################
+  ##  errorpage
+  ############################################*/
+
+.homeLink {
+ 	color:#64C7D5;
+ 	text-decoration: underline;
+}
+
+#errorContent {
+ 	width:100%;
+  	height:396px;
+  	font-family: 'avenir';
+  	font-weight:bold;
+  	font-size:14pt;
+}
+
+#errorContent_left {
+ 	float:left;
+ 	width:250px;
+}
+
+#errorContent_right {
+ 	float:left;
+ 	width:633px;
+ 	padding-top:110px;
+}
+
+#errorPic {
+	position:relative;
+	top:110px;
+	left:55px;
+}
+
+#errorHeadline {
+	font-weight:normal;
+	overflow: hidden;
+	font-size: 25pt;
+	font-family: 'avenir';
+	color: #FF8916;
+}
+
+.debug {
+	background-color: #f0f;
+	color: #fff;
+	border: 3px solid #080;
+	font-weight: bold;
+}
+
+.cartitem_quantity input {
+	width:26px;
+	height:26px !important;
+	border-color: #C3C3C3 !important;
+	margin-top:36px;
+	margin-left:16px !important;
+	font-size: 13pt !important;
+	text-align: right;
+	padding-right: 7px;
+	background-color: #FFFFFF;
+	color:#262626;
+}
+
+/*########################
+##  Recaptcha           ##
+##########################*/
+#recaptcha_widget {
+	width: 560px;
+}
+#recaptcha_widget #recaptcha_image {
+
+}
+#recaptcha_widget .captchaReloadLink {
+	color: #64C7D5;
+    font-family: 'avenir';
+    font-size: 10pt;
+}
+#recaptcha_widget .challengeImage {
+
+}
+#recaptcha_widget #recaptcha_only_if_image {
+
+}
+#recaptcha_widget #recaptcha_response_field {
+	width: 225px;
+}
+
+#messages {
+	font-family: 'avenir';
+	font-size:14pt;
+	padding:30px;
+}
+
+.blueButton img {
+	margin-left: 6px;
+	margin-top: 11px;
+}

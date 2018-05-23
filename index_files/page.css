@@ -1,0 +1,1108 @@
+/**
+quick css help:
+margin:
+2 [top+bottom, 	left+right				]
+3 [top, 		left+right, bottom		]
+4 [top, 		right, 		bottom, left]
+*/
+
+/*###################
+##  GLOBAL  ##
+#####################*/
+
+#user {
+	color:#000000;
+	text-decoration: none;
+	float:left;
+	margin-right:10px;
+	margin-top:5px;
+	font-family:Avenir LT Std;
+	font-size:11pt;
+}
+
+#content_outer {
+	margin: 0 auto;
+	padding-top: 200px;
+    z-index: -2;
+    width: 1024px;
+}
+<col width="500px">
+.contentTable {
+	border-collapse: collapse;
+}
+
+.contentTable td{
+	width: 50%;
+}
+
+#background {
+	position: fixed;
+	left: 50%;
+	width: 1680px;
+	margin-left: -840px;
+	top: 174px; /* 134px */
+	z-index: -3;
+	background-repeat: no-repeat;
+}
+
+#stripeOverlay{
+	background-image: url(../images/stripes_transparent.png);
+	width: 1680px;
+	height: 1539px;
+}
+
+.homeTeaser {
+	position: relative; 
+	width: 542px;
+	padding: 8px 0;
+}
+
+.homeTeaser:hover {
+	background-color: white;
+}
+
+.homeMainHeadline:hover {
+	background-color: #64C7D5;
+}
+
+
+/*###################
+##  PRODUCTS  ##
+#####################*/
+
+.bottom_teaser.read {
+	 
+	color: #000000;
+	background-image: url(../images/content/leseprobe.png);
+
+}
+
+
+.bottom_teaser_text {
+	font-size:10pt;
+	margin-left:100px;
+	margin-top : 10px;
+}
+
+.bottom_teaser_text img {
+	position:relative !important;
+	top:0px !important;
+	left:6px !important;
+	height:10px !important;
+}
+
+.defaultButton.reader {
+	display:inline-block;
+	font-family: ITC Lubalin Graph Std;
+	font-size:12pt;
+	height:32px;
+	line-height:32px;
+	padding-left:5px; 
+	padding-right:5px; 
+	width:160px;
+	margin-top:1px;
+	margin-left:100px;
+}
+
+.defaultButton.healthCheck {
+	display:inline-block;
+	font-family: ITC Lubalin Graph Std;
+	font-size:12pt;
+	height:32px;
+	line-height:32p<col width="500px">x;
+	padding-left:10px; 
+	padding-right:0px; 
+	width:239px;
+	margin-top:4px;
+}
+
+.bottom_teaser_box {
+	width:100%; 
+	height:150px; 
+	margin-left:20px;
+	padding-top:35px;
+}
+
+.bottom_teaser.video {
+	background-image: url(../images/achimVideo.png);
+}
+
+.bottom_teaser.testedby {
+	color:#262626;
+	background-image: url(../images/content/testedBy.png);
+}
+
+.testedByPopup {
+	background-color: #ffffff;
+	box-shadow: 0 4px 9px 0 rgba(0,0,0,0.8);
+	border: 1px solid #999999;
+}
+
+.testedByPopup .ui-dialog-titlebar {
+	position: absolute;
+    top: -95px;
+    width: 100%;
+}
+
+.bottom_teaser {
+	width:283px; 
+	height:90px; 
+	float:left;
+	border:1px solid #cdcdcd;
+	font-family: ITC Lubalin Graph Std;
+	color:#ffffff;
+	font-size: 13pt;
+	padding-left:17px;
+	padding-top:9px;
+}
+
+.product {
+	width: 1024px;
+	height: 146px;
+	border-color: #999999;
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	background-color: #FFFFFF;
+	font-family: 'Avenir LT Std';
+	position: relative;
+	cursor: pointer;
+}
+
+.product:hover {
+	background-image: url(../images/stripes.png);
+}
+
+.product.expanded {
+	height: auto;
+}
+
+.product.expanded:hover {
+	background-image: none;
+}
+
+.product img {
+	position: absolute;
+	top: 3px;
+	left: 56px;
+}
+
+.product_info {
+	width: 429px;
+	height: 143px;
+	position: absolute;
+	top: 0px;
+	left: 310px;
+}
+
+.product_info_name {
+	font-size: 29pt;
+	font-family: 'ITC Lubalin Graph Std';
+}
+
+.product_info_description {
+	font-size: 13pt;
+}
+
+.expandedInner {
+	min-height: 350px;
+}
+
+.expandedInner.product.expanded {
+	background-image: url(../images/stripes.png);
+	padding:26px;
+}
+
+.product.expanded  {
+	width:972px;
+}
+
+.product.expanded .product_info {
+	position: relative;
+	padding: 60px 0;
+	width: 400px;
+	height: auto;
+}
+
+.product_info_subtitle {
+	/*color: #64c7d5;*/
+	font-weight: normal;
+	font-size:14pt;
+}
+
+.product.expanded .product_info p {
+	font-size: 14px;
+	line-height: 140%;
+}
+
+.product.expanded .product_info a {
+	color: #64c7d5;
+	text-decoration: underline;
+}
+
+.product.expanded img {
+	top: 82px;
+}
+
+.product.expanded .product_info_name {
+	font-size: 29pt;
+	font-family: 'ITC Lubalin Graph Std';
+}
+
+.product.expanded .product_info_name {
+	font-size: 29pt;
+	font-family: 'ITC Lubalin Graph Std';
+}
+
+.product_order {
+	padding: 0 27px;
+	width: 176px;
+	position: absolute;
+	right: 30px;
+	top: 0px;
+	padding-top:13px;
+	height:133px;
+}
+
+.product_order_line {
+	width: 176px;
+	height: 28px;
+	color: #333;
+	font-size: 14px;
+	padding-top: 12px;
+}
+
+.product_order_line.topborder {
+	border-top: 1px dashed #FF8818;
+}
+
+.product_order_line .right {
+	float: right;
+	text-align: right;
+	color: #262626;
+	font-family: 'ITC Lubalin Graph Std';
+}
+
+.product_order_line .right.price {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.product.expanded .product_order {
+	top: 80px;
+	/*background-color: #262626;
+	border-bottom: 3px solid #FF8818;*/ 
+}
+
+/*
+.product.expanded .product_order_line,
+.product.expanded .product_order_line .right {
+	color: #fff;
+}*/
+
+.product_order.buy {
+	background-color: #262626;
+	/*border-bottom: 3px solid #FF8818;*/
+}
+
+.product_order_line.buy {
+	color:#ffffff;
+}
+
+.right.buy {
+	color:#ffffff;
+}
+
+.right.price.buy {
+	color:#ffffff;
+}
+
+.product_tocart_inc {
+	position:absolute;
+	right:45px;
+	top:59px;
+}
+
+.product_tocart_dec {
+	position:absolute;
+	right:45px;
+	top:76px;
+}
+
+.product_sum {
+	text-align: right;
+	font-size: 11pt;
+}
+
+.product a.expandButton {
+	font-family: 'ITC Lubalin Graph Std';
+	background-color: #63C7D6;
+	color: #FFFFFF;
+	width: 132px;
+	height: 16px;
+	position: absolute;
+	left: 428px;
+	bottom: 0;
+	padding: 6px 18px 4px 18px;
+	background-image: url(../images/expand.png);
+	background-repeat: no-repeat;
+	background-position: 126px 6px;
+	display: none;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+.product:hover a.expandButton {
+	display: block;
+}
+
+.product a.expandButton.collapse {
+	top: 0;
+	background-image: url(../images/collapse.png);
+	display: block;
+}
+
+.product_close {
+	background: #63C7D6;
+	color: #FFFFFF;
+	width: 168px;
+	height: 32px;
+}
+
+.amount_input {
+	width: 57;
+	height: 32;
+	border-color: #FF8818;
+	border-style: solid;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	text-align: right;
+	padding-right: 10px;
+	float: right;
+	font-size: 12pt;
+}
+
+.ingredients {
+	display: none;
+}
+
+.productIngredients {
+        overflow: auto;
+        padding: 40px;
+}
+
+.productIngredients, .productIngredients td {
+        color: #000;
+        font-family: 'Avenir LT Std';
+        font-size: 14px;
+        line-height: 16px;
+}
+
+.productIngredients h3 {
+	font-weight: normal;
+	font-size: 24px;
+}
+
+.productIngredients p {
+	color: #999;
+}
+
+.productIngredients table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.productIngredients td {
+	border: 1px solid #999;
+	padding: 4px;
+}
+
+/* 262626 preis*/
+/* 666666 */
+/* trennlinie FF8818 */
+
+/*###################
+##  TOPNAVIGATION  ##
+#####################*/
+#topnavi {
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	list-style-type: none;
+	margin-top: 19px;
+	margin-bottom: 0px;
+	height: 44px;
+	font-family: 'ITC Lubalin Graph Std';
+}
+
+#topnavi li {
+	display: block;
+	color: #888888;
+	border-left: 1px solid #999999;
+	float: left;
+}
+
+#topnavi li:hover {
+	background-color: #262626;
+}
+
+#topnavi li > a {
+	padding: 13px 28px;
+	text-decoration: none;
+	color: #888888;
+	display: block;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#topnavi li a:hover {
+	color: #ffffff;
+}
+
+#topnavi li a.nav_active {
+	color: #ffffff;
+	background-color: #262626;
+}
+
+#topnavi li a#homeicon {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../images/home_inactive.png');
+}
+
+#topnavi li a#homeicon.nav_active {
+	background-image: url('../images/home_active.png');
+}
+
+#topnavi li a#homeicon:hover {
+	background-image: url('../images/home_active.png');
+}
+
+#countryChooser {
+	display:none;
+}
+
+.countryChooser {
+	background-color:#ffffff;
+	border: 1px solid #cdcdcd;
+	font-family:Avenir LT Std;
+	font-size:11pt;
+	padding:5px;
+	width:110px;
+}
+
+.countryChooser a{
+	line-height:21px;
+	color:#888888;
+	text-decoration:none;
+}
+
+.countryChooser a:hover{
+	color:#262626;
+}
+
+/*########################################
+##  TOP-TOP NAVI (fb, language, login)  ##
+##########################################*/
+#topTopNavi {
+	display: block;
+    float: right;
+    margin-right: 23px;
+    margin-top: 10px;
+}
+
+#topTopNavi span{
+	font-family: 'ITC Lubalin Graph Std';
+	font-size: 10pt;
+}
+
+#topTopNavi a{
+	text-decoration: none;
+}
+
+#topTopNavi img{
+	border: none;
+}
+
+#fbButton {
+	float: left;
+	color:#222222;
+	margin-right: 22px;
+	margin-top:5px;
+}
+
+#fbButton img{
+	vertical-align: middle;
+}
+
+#fbButton span{
+}
+
+#languageButton {
+	float: left;
+	cursor:pointer;
+}
+
+#languageButton span{
+}
+
+#languageButton img{
+	vertical-align: middle;
+}
+
+#topTopNavi #loginButton {
+	float: left;
+}
+
+#topTopNavi #loginButton span{
+	/*vertical-align: middle;*/
+}
+
+#topTopNavi #loginButton img{
+	vertical-align: middle;
+}
+
+
+/*###################
+##  SHOPPING-CART  ##
+#####################*/
+#cartbox {
+	background-color: #262626;
+	width: 230px;
+	height: 86px;
+	position: absolute;
+	top: 89px; /*49*/
+}
+
+#cart_product_count {
+	color: #ffffff;
+	font-weight: lighter;
+	font-size: 9pt;
+}
+
+a#checkoutButton {
+	display: block;
+	color: #ffffff;
+	padding: 8px 0px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16pt;
+}
+
+#cart_shortinfo {
+	border-collapse: collapse;
+	height: 46px;
+	width: 230px;
+}
+
+.cart_spacer {
+	height:40px;
+	background-color:#ffffff;
+}
+
+#cart_shortinfo td{
+	/*width: 50%;*/ /*fixes spaceing problemwhen total price > 999.99 */
+	vertical-align: middle;
+	text-align: left;
+}
+
+#cart_total {
+	font-size: 18pt;
+	color: #ffffff;
+}
+
+/*The jquery-ui dialog css class:*/
+.checkoutDialog {
+	position: fixed;
+}
+
+#checkout_callout {
+	background-color: #008800;
+}
+
+/*########################
+##  HEALTH CHECK        ##
+##########################*/
+.colorBg {
+	background-color: rgba(100, 199, 213, 0.7);
+}
+
+.darkBg {
+	background-color: rgba(51, 51, 51, 0.9);
+}
+
+.mainPadded {
+	padding: 42px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 34px;
+	font-family: 'ITC Lubalin Graph Std';
+	margin: 45px 0;
+}
+
+.mainPadded p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.healthTest {
+	position: fixed;
+	height: 0;
+}
+
+.healthTest p {
+	font-family: 'ITC Lubalin Graph Std';
+	font-size: 34px;
+	margin: 0 0 20px 0;
+	color: #FFF;
+}
+
+.healthInner {
+	color: #000;
+	background-color: #FFF;
+	height: 400px;
+	overflow: none;
+}
+.healthInner .simpleArrowBox {
+	font-family: 'ITC Lubalin Graph Std';
+}
+.healthInner p.orange {
+	color: #FF8916;
+}
+.healthContent {
+	padding: 26px 45px;
+}
+.healthInner p {
+	color: #000;
+	font-family: 'Avenir LT Std';
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.healthInner h1 {
+	font-family: 'ITC Lubalin Graph Std';
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+.healthContent .questions {
+	position: absolute;
+	width: 320px;
+	height:50px;
+	bottom: -5px;
+	left: 50%;
+}
+.healthContent .questions .q {
+	width: 400px;
+	margin-left: -200px;
+	text-align: center;
+	font-family: 'Avenir LT Std';
+	color: #696969;
+}
+.healthContent .questions strong {
+	color: #000;
+}
+a.healthCheckNext {
+	background-color: #63C7D6;
+	display: block;
+	padding: 8px 14px;
+	color: #fff;
+	font-family: 'ITC Lubalin Graph Std';
+	font-weight: bold;
+	position: absolute;
+	bottom: 15px;
+	right: 45px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+a.closeButtonHealthTest {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: 'ITC Lubalin Graph Std';
+	padding: 9px 45px 4px 16px;
+	background-color: #63C7D6;
+	position: fixed;
+	display: none;
+	text-decoration: none;
+	background-image: url(../images/cross.png);
+	background-repeat: no-repeat;
+	background-position: 95px 5px;
+}
+
+/*########################
+##  BUTTONS             ##
+##########################*/
+.grayButton {
+	background-color: #dfdfdf;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #828282;
+	margin-right: 1px;
+	height: 30px;
+	line-height: 31px;
+}
+
+a.healtCheckBox {
+	background-color: #FF8916;
+	padding: 11px 54px 14px 90px;
+	background-image: url(../images/zum_gesundheitscheck.png);
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a.healtCheckBox:hover {
+	background-color: #262626;
+}
+
+/*########################
+##  LOGIN               ##
+##########################*/
+.loginDialog {
+	background-color: #ffffff;
+	box-shadow: 0 4px 9px 0 rgba(0,0,0,0.8);
+	border: 1px solid #999999;
+	position: fixed;
+}
+
+#login_callout {
+	padding: 30px;
+	font-family: 'Avenir LT Std';
+	height: auto !important;
+}
+
+#login_callout #loginButtonOverlay{
+	font-family: 'ITC Lubalin Graph Std';
+    font-size: 10pt;
+    position: absolute;
+    right: -2px;
+    text-decoration: none;
+    top: -31px;
+    padding-left: 2px;
+    border: 1px solid #999999;
+    border-bottom: 1px solid #ffffff;
+}
+
+#login_callout #loginButtonOverlay span {
+	font-family: 'ITC Lubalin Graph Std';
+	font-size: 10pt;
+}
+
+#login_callout #loginButtonOverlay img {
+	vertical-align: middle;
+}
+
+.loginButton_calloutOpened {
+	background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #000000;
+}
+
+#login_callout span{
+	font-size: 12pt;
+	margin-left: 3px;
+}
+
+
+#registerButton {
+	font-family: 'ITC Lubalin Graph Std';
+	position: absolute;
+	right: 37px;
+	top: 256px;
+}
+
+#login_callout #register {
+	margin-top: 20px;
+	margin-left: 3px;
+}
+
+#login_callout #register span{
+	margin: 0px;
+}
+
+.bmiCalculatorDialog {
+	position: fixed;
+}
+
+.bmiCalculatorDialog .ui-dialog-titlebar {
+	display: block !important;
+	/*background-image: linear-gradient( 0deg, white, #eeeeee);*/
+	/*background-image: linear-gradient(-7deg, white, #FF8916);*/
+	/*background-image: url('../images/stripes.png');*/
+	background-color: white;
+	padding: 10px;
+	font-family: 'Avenir LT Std';
+	font-size: 14pt;
+}
+
+/*########################
+##  POSTS (DIÄT-TIPPS   ##
+##########################*/
+
+.dietHintPost {
+	font-family: 'Avenir LT Std';
+	color: #333;
+	padding-bottom: 25px;
+}
+
+.dietHintPost a {
+	text-decoration: underline;
+	color: #63C7D6;
+}
+
+.dietHintPost .postDate {
+	background-image: url('../images/icons/postDateBg.png');
+	background-repeat: no-repeat;
+	color: white;
+	font-size: 14px;
+	line-height: 20px;
+    margin: 6px -12px 0;
+    padding: 12px 0 12px 13px;
+	/*top, 		right, 		bottom, left*/
+}
+
+.dietHintPost .postSideBar {
+	width: 300px;
+}
+
+.dietHintPost .postBody {
+	width: 600px;
+	float: right;
+}
+
+.dietHintPost .section {
+	margin-top: -4px;
+}
+
+.dietHintPost h1 {
+	color: #000;
+}
+
+.dietHintPost .postImgAndCaption {
+	float: right;
+	margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.dietHintPost img.alignright {
+	float: right;
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+.dietHintPost img.alignleft {
+	float: left;
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+.dietHintPost img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dietHintPost .postImgAndCaption span{
+	font-size: 12px;
+	font-style: italic;
+}
+
+.dietHintPost .postImgAndCaption td:nth-child(1) {
+	width: 0;
+}
+
+.dietHintFooter {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 14px;
+	position: relative;
+}
+
+.dietHintFooter .dietPrevNext {
+	background: #63C7D6;
+	font-family: 'ITC Lubalin Graph Std';
+	position: absolute;
+	top: 16px;
+	font-size: 14px;
+	padding: 8px 15px;
+}
+
+.dietHintFooter a.dietPrevNext {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.dietHintFooter .dietPrevNext.left {
+	left: 50px;
+}
+
+.dietHintFooter .dietPrevNext.right {
+	right: 50px;
+}
+
+/*########################################
+##  TEASER for CMS ##
+##########################################*/
+
+.teaser {
+	padding:20px 45px;
+	padding-bottom: 44px;
+}
+
+.teaser.gray a {
+	cursor: pointer;
+	display:inline-block;
+	font-family:ITC Lubalin Graph Std;
+}
+
+.teaser.gray {
+	border:1px solid #999999;
+	background-color: rgba(38, 38, 38, 0.85);
+}
+
+.teaser.gray img {
+	float:right
+}
+
+.teaser.gray td {
+	width: 50%;
+	vertical-align: top;
+	color: #FFFFFF;
+	font-family: 'Avenir LT Std';
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 18px;
+}
+
+/*###################
+##  GALLERY  ##
+#####################*/
+
+
+.category-header {
+  padding: 10px 30px;
+  background-color: #ebebeb;
+  font-size: 20pt;
+  font-family: 'ITC Lubalin Graph Std', Arial, Helvetica, sans-serif;
+}
+
+.bottom-cat {
+	border-top:1px solid #999;
+}
+
+/*###################
+##  STORELOCATOR   ##
+#####################*/
+
+.storelocator-panel {
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+
+.storelocator-panel .store-list {
+  margin: 0;
+  padding: 0;
+}
+
+.storelocator-panel .store-list li,
+.storelocator-panel .directions-panel {
+  padding: 5px;
+  font-size: 0.9em;
+}
+.storelocator-panel .directions-panel {
+  font-size: 0.8em;
+}
+
+.storelocator-panel .store-list li.store:hover {
+  cursor: pointer;
+  background: #eee;
+}
+
+.storelocator-panel .store-list li.highlighted,
+.storelocator-panel .store-list li.highlighted:hover {
+  background: #ccf;
+}
+
+.storelocator-panel .directions {
+  display: none;
+}
+
+.storelocator-panel .location-search {
+  padding: 5px;
+}
+
+.storelocator-panel .location-search input {
+  width: 95%;
+}
+
+.storelocator-panel .location-search h4 {
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+}
+
+.storelocator-panel .store-list .no-stores {
+  color: grey;
+}
+
+.storelocator-panel .store .features {
+  display: none;
+}
+
+.storelocator-panel .feature-filter {
+  overflow: hidden;
+}
+
+.storelocator-panel .feature-filter label {
+  display: block;
+  font-size: 0.8em;
+  margin: 0 0.4em;
+  float: left;
+}
+
+.store .title {
+  font-weight: bold;
+}
+
+.store .address,
+.store .phone,
+.store .web,
+.store .misc {
+  font-size: 80%;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.store .features {
+  overflow: hidden;
+  color: grey;
+  margin: 0;
+  padding: 0;
+  font-size: 70%;
+  max-width: 250px;
+}
+
+.store .features li {
+  display: inline;
+  float: left;
+  padding-right: 0.8em;
+}
+
+.store .web a {
+  color: green
+}
+
+.store .action {
+  font-size: 0.7em;
+  color: green;
+  margin-right: 0.5em;
+}
+
+/*########################
+##  EOF: STORELOCATOR   ##
+##########################*/
